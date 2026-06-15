@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand */
+  --color-primary: #103c7b;
+  --color-primary-dark: #082a59;
+
+  /* Background */
+  --color-background: #ffffff;
+  --color-background-secondary: #f8fafc;
+
+  /* Text */
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+
+  /* Border */
+  --color-border: #e5e7eb;
+
+  /* Success */
+  --color-success: #22c55e;
+
+  /* Radius */
+  --radius-card: 16px;
+  --radius-button: 12px;
+
+  /* Shadow */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+}
