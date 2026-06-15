@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+🏗️ Mourão Engenharia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page institucional desenvolvida para divulgação dos serviços de vistoria e laudos técnicos da Mourão Engenharia.
 
-Currently, two official plugins are available:
+O projeto foi desenvolvido com foco em:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Design moderno e minimalista
+Responsividade mobile-first
+Performance
+Conversão de visitantes em contatos via WhatsApp
+Identidade visual alinhada à marca
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 Tecnologias Utilizadas
+Frontend
+React
+TypeScript
+Vite
+Tailwind CSS v4
+UI e Experiência
+Lucide React (ícones)
+Inter Font
+CSS Moderno
+Mobile First Design
+Ferramentas
+Node.js
+npm
+Git
+GitHub
+🎨 Design System
 
-## Expanding the ESLint configuration
+O projeto possui um design system próprio baseado na identidade visual da Mourão Engenharia.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Cores
+Cor	Hex
+Primary	#103C7B
+Primary Dark	#082A59
+Background	#FFFFFF
+Secondary Background	#F8FAFC
+Text Primary	#111827
+Text Secondary	#6B7280
+Tipografia
+Inter
+📱 Funcionalidades
+Header responsivo
+Navegação por âncoras
+Hero section institucional
+Apresentação dos serviços
+Processo de vistoria
+Seção sobre o engenheiro
+Área de contato
+Botão flutuante de WhatsApp
+Favicon personalizado
+SEO básico configurado
+📂 Estrutura do Projeto
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── WhyInspection.tsx
+│   ├── Services.tsx
+│   ├── Process.tsx
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   └── WhatsappButton.tsx
+│
+├── pages/
+│   └── Home.tsx
+│
+├── ui/
+│   ├── Button.tsx
+│   ├── Card.tsx
+│   ├── Container.tsx
+│   ├── Section.tsx
+│   └── SectionTitle.tsx
+│
+├── App.tsx
+├── main.tsx
+└── index.css
+⚙️ Instalação
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Clone o repositório
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Entre na pasta:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+cd mourao-engenharia
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Execute o projeto:
+
+npm run dev
+
+Build de produção:
+
+npm run build
+
+Preview da build:
+
+npm run preview
+📌 Objetivo
+
+O objetivo deste projeto é oferecer uma presença digital profissional para a Mourão Engenharia, apresentando seus serviços de vistoria e laudos técnicos de forma clara, moderna e acessível.
+
+👨‍💻 Desenvolvido por
+
+Desenvolvido com React, TypeScript e Tailwind CSS.
+
+Projeto criado para a Mourão Engenharia.
